@@ -32,7 +32,7 @@ function maxOfThree(first, second, third){
     return(largestNumber);
     }
 
-console.assert( maxOfThree(2, 3, 4) === 4 , "max");
+console.assert( maxOfThree(2, 3, 4) === 4 , "max"); //
 
 
 // ---------------------
@@ -41,7 +41,9 @@ console.assert( maxOfThree(2, 3, 4) === 4 , "max");
 
 function isVowel(char){
     "use strict";
-    //...
+
+
+
 }
 
 // ---------------------
