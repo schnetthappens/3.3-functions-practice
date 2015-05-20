@@ -9,30 +9,30 @@
 
     function max(first, second){
     "use strict";
-    if(first > second) {
-      return first;
-    } else {
-      return second;
+      if(first > second) {
+        return first;
+      } else {
+        return second;
+      }
     }
-}
 
 console.assert( max(2, 3) === 3 , "max");
 console.assert( max(3, 2) === 3 , "max");
 console.assert( max(4, 4) === 4 , "max");
 
 
-
 // ---------------------
 // Define a function maxOfThree() that takes three numbers as arguments and returns the largest of them.
 // ---------------------
 
-function maxOfThree(first, second, third){
-    "use strict";
-  var largestNumber =  Math.max(first, second, third);
-    return(largestNumber);
-    }
+    function maxOfThree(first, second, third){
+        "use strict";
+      var largestNumber =  Math.max(first, second, third);
+        return(largestNumber);
+        }
 
-console.assert( maxOfThree(2, 3, 4) === 4 , "max"); //
+console.assert( maxOfThree(2, 3, 4) === 4 , "max");
+console.assert( maxOfThree(2, 4, 4) === 4, "max");
 
 
 // ---------------------
@@ -41,10 +41,16 @@ console.assert( maxOfThree(2, 3, 4) === 4 , "max"); //
 
 function isVowel(char){
     "use strict";
+       if ("a" || "e" || "i" || "o" || "u") {
+         return true;
+       }
+       else {
+         return false;
+       }
+     }
 
+console.assert( isVowel("a") === true, "a is not a vowel");
 
-
-}
 
 // ---------------------
 // Write a function translate() that will translate a text into "rövarspråket". That is, double every consonant and place an occurrence of "o" in between. For example, translate("this is fun") should return the string "tothohisos isos fofunon".
