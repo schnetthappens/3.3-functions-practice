@@ -61,19 +61,28 @@ function rovarspraket(phrase){
     //...
 }
 
+
 // ---------------------
 // Define a function sum() and a function multiply() that sums and multiplies (respectively) all the numbers in an array of numbers. For example, sum([1,2,3,4]) should return 10, and multiply([1,2,3,4]) should return 24.
 // ---------------------
 
-function sum(){
+function sum(numbers) {
     "use strict";
-    //...
+      var total = 0;
+        for (var i = 0; i < numbers.length; i++) {
+        total += numbers[i];
+        }
+        return total;
 }
 
-function multiply(){
-    "use strict";
-    //...
-}
+// function multiply(){
+//     "use strict";
+//     //...
+// }
+
+
+console.assert( sum([1, 2, 3, 4]) === 10, "sum not correct");
+
 
 // ---------------------
 // Define a function reverse() that computes the reversal of a string. For example, reverse("jag testar") should return the string "ratset gaj".
