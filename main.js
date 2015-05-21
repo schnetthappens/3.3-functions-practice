@@ -75,13 +75,18 @@ function sum(numbers) {
         return total;
 }
 
-// function multiply(){
-//     "use strict";
-//     //...
-// }
+function multiply(numbers) {
+    "use strict";
+      var total = 1;
+        for (var i = 0; i < numbers.length; i++) {
+        total = total * numbers[i];
+        }
+        return total;
+}
 
 
 console.assert( sum([1, 2, 3, 4]) === 10, "sum not correct");
+console.assert( multiply([1, 2, 3, 4]) === 24, "product not correct");
 
 
 // ---------------------
